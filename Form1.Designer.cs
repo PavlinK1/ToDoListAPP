@@ -45,7 +45,7 @@
             btnAdd.Location = new Point(194, 62);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(121, 23);
-            btnAdd.TabIndex = 0;
+            btnAdd.TabIndex = 1;
             btnAdd.Text = "Добавяне";
             btnAdd.UseVisualStyleBackColor = true;
             btnAdd.Click += btnAdd_Click;
@@ -55,7 +55,7 @@
             btnRemove.Location = new Point(460, 62);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(121, 23);
-            btnRemove.TabIndex = 1;
+            btnRemove.TabIndex = 3;
             btnRemove.Text = "Изтриване";
             btnRemove.UseVisualStyleBackColor = true;
             btnRemove.Click += btnRemove_Click;
@@ -66,7 +66,7 @@
             txtTask.Location = new Point(194, 33);
             txtTask.Name = "txtTask";
             txtTask.Size = new Size(387, 23);
-            txtTask.TabIndex = 2;
+            txtTask.TabIndex = 0;
             txtTask.Text = "Въведете нова задача..";
             txtTask.TextChanged += txtTask_TextChanged;
             txtTask.Enter += txtTask_Enter;
@@ -78,7 +78,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 4;
+            menuStrip1.TabIndex = 5;
             menuStrip1.Text = "menuStrip1";
             // 
             // файлToolStripMenuItem
@@ -107,7 +107,7 @@
             btnEdit.Location = new Point(346, 62);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(84, 23);
-            btnEdit.TabIndex = 5;
+            btnEdit.TabIndex = 2;
             btnEdit.Text = "Редактирай";
             btnEdit.UseVisualStyleBackColor = true;
             btnEdit.Click += btnEdit_Click;
@@ -118,7 +118,7 @@
             clbTasks.Location = new Point(194, 103);
             clbTasks.Name = "clbTasks";
             clbTasks.Size = new Size(387, 274);
-            clbTasks.TabIndex = 6;
+            clbTasks.TabIndex = 4;
             // 
             // Form1
             // 

@@ -10,7 +10,6 @@ namespace ToDoListAPP
         {
             InitializeComponent();
 
-            // Регистриране на събитието ItemCheck
             clbTasks.ItemCheck += clbTasks_ItemCheck;
 
             txtTask.Text = "Въведете нова задача...";
@@ -138,7 +137,7 @@ namespace ToDoListAPP
                         while ((line = reader.ReadLine()) != null)
                         {
                             lineNumber++;
-                            // Пропускаме първите три реда (заглавие, разделител, празен ред)
+                            // Пропускаме първите три реда
                             if (lineNumber <= 3)
                             {
                                 continue;
@@ -161,7 +160,7 @@ namespace ToDoListAPP
             if (clbTasks.SelectedIndex != -1)
             {
                 string selectedTask = clbTasks.SelectedItem.ToString();
-                string taskText = selectedTask.Substring(2); // Премахваме символа и интервала
+                string taskText = selectedTask.Substring(2);
                 txtTask.Text = taskText;
                 clbTasks.Items.RemoveAt(clbTasks.SelectedIndex);
                 txtTask.Focus();
