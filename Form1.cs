@@ -108,10 +108,9 @@ namespace ToDoListAPP
                 {
                     using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
                     {
-                        // Добавяне на информация най-отгоре във файла
                         writer.WriteLine($"ToDo List - Дата: {DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss")}");
                         writer.WriteLine("=====================================");
-                        writer.WriteLine(); // Празен ред
+                        writer.WriteLine();
 
                         foreach (var item in clbTasks.Items)
                         {
